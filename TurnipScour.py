@@ -64,7 +64,9 @@ for submission in submissions.stream.submissions():
                 time.sleep(18)
                 comment_list = list(submission.comments) n
                 Kommentiere()
-
+print("Couldn't comment, you probably reached your Limit/got timeouted")
+print("Press Enter to close")
+input()
 
 
 
