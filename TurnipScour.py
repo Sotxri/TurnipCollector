@@ -2,10 +2,11 @@ import praw
 import random
 import sys
 import time
-from prawcore import PrawcoreException 
+from prawcore import PrawcoreException
 
 
-##reddit initiates the praw instance. If you change the bot name in your .ini, you will need to change it here as well.
+##reddit initiates the praw instance. If you change the bot name in your .ini, 
+#you will need to change it here as well.
 ##stichwoerter is the list of keywords triggering the bot
 ##submissions is the subreddit you want to search in for. Pre-set to acturnips.
 ##Start_time is the exact time you started the bot. Uses it to go from that point forward.
@@ -14,7 +15,8 @@ from prawcore import PrawcoreException
 ##Antworten is an array of random Lines to comment in case there are none available.
 ##You can un-comment the "print(submission...))" down below to see the full text of each submission
 
-##You can comment all the "time.sleep" lines to speed up the bot. WARNING: THIS IS NOT RECOMMEND AS IT WILL LIKELY GET YOU BANNED!
+##You can comment all the "time.sleep" lines to speed up the bot. 
+#WARNING: THIS IS NOT RECOMMEND AS IT WILL LIKELY GET YOU BANNED!
 
 ##Again, use the bot at your own risk!
 
@@ -23,7 +25,8 @@ from prawcore import PrawcoreException
 reddit = praw.Reddit('bot1', user_agent='Owned by Quentin')
 
 non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), 0xfffd)
-stichwoerter= ['selling','Timmy','Tommy','buying','Selling','Buying','turnips','Turnips'] #Titelstichwörter
+stichwoerter = ['selling', 'Timmy', 'Tommy', 'buying', 
+                'Selling', 'Buying', 'turnips', 'Turnips']
 keywords = stichwoerter
 submissions = reddit.subreddit('acturnips') 
 start_time = time.time()
