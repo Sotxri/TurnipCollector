@@ -1,6 +1,6 @@
 # TurnipCollector
 **_Hear ya, hear ya! Get your Turnips sold fast and easy!_**
-
+![](images/Daisy.png)
 This bot is designed to scour through the acturnips subreddit to find any posts related to selling/buying.
 ## Requirements
 - [ ] A Reddit account
