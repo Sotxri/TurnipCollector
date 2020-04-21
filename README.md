@@ -46,5 +46,10 @@ This bot can only post on a Reddit submission, so the author notices you. Actual
 Thats it! Happy Hunting
 
 
+## Upcoming Updats
+- [X] Make the Bot recognize Mod
+- [X] Get Error Print
+- [ ] Be able to give minimum Amount of price
+
 
 
