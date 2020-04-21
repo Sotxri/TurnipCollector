@@ -2,6 +2,7 @@ import praw
 import random
 import sys
 import time
+from prawcore import PrawcoreException 
 
 
 ##reddit initiates the praw instance. If you change the bot name in your .ini, you will need to change it here as well.
@@ -46,28 +47,28 @@ def Kommentiere():
                 print("Waiting: ", Zeit, "seconds")   
             else: print("Bot chosen")
         if len(comment_list) == 0:
-            print("Random Line",Antwort)
+            print("Random Line: ",Antwort)
             submission.reply(Antwort)
 
 
-
-for submission in submissions.stream.submissions():
-    if submission.created_utc < start_time:        
-        continue
-    if not submission.stickied:
-        for stichwort in stichwoerter:
-            if stichwort in submission.title.lower():
-                print(20*"-")
-                print(submission.title)  
-                #print(submission.selftext.translate(non_bmp_map))
-                submission.comments.replace_more(limit=0)  
-                time.sleep(18)
-                comment_list = list(submission.comments) n
-                Kommentiere()
-print("Couldn't comment, you probably reached your Limit/got timeouted")
-print("Press Enter to close")
-input()
-
+try:
+        for submission in submissions.stream.submissions():
+            if submission.created_utc < start_time:        
+                continue
+            if not submission.stickied:
+                for stichwort in stichwoerter:
+                    if stichwort in submission.title.lower():
+                        print(20*"-")
+                        print("Title: ", submission.title)  
+                        #print(submission.selftext.translate(non_bmp_map))
+                        submission.comments.replace_more(limit=0)  
+                        time.sleep(18)
+                        comment_list = list(submission.comments)
+                        Kommentiere()
+except Exception as err:
+        print("An Error Occurred! You probably can't post due to low Karma or a mute/ban")
+        print("Press ENTER to close the script")
+        input()
 
 
         
