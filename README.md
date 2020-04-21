@@ -3,8 +3,15 @@
 
 This bot is designed to scour through the acturnips subreddit to find any posts related to selling/buying.
 ## Requirements
- You will need a Reddit account as well as little bit of Karma to bypass the Rate-of-comment Limit. 
+- [ ] A Reddit account
+- [ ] Your OAuth Tokens
+- [ ] A basic text editor
 
+I won't go into much detail, but it is explained [here](https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example).
+You will need to go [there](https://www.reddit.com/prefs/apps) and follow the [Guide](https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example) on how to set everything up!
+
+After you have all the neccessary tokens, open up the _credentials.ini_ and just paste the tokens at the written position. Save, and you're done! 
+ 
 
 ## Features
 
