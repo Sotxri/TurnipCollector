@@ -10,7 +10,19 @@ This bot is designed to scour through the acturnips subreddit to find any posts 
 I won't go into much detail, but it is explained [here](https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example).
 You will need to go [there](https://www.reddit.com/prefs/apps) and follow the [Guide](https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example) on how to set everything up!
 
-After you have all the neccessary tokens, open up the _credentials.ini_ and just paste the tokens at the written position. Save, and you're done! 
+After you have all the neccessary tokens, open up the _praw.ini_ and just paste the tokens at the written position. Save, and you're done! 
+It should look something like this:
+```
+[bot1]
+client_id=XXXXXXXXXXXX
+client_secret=XXXXXXXXXXXXXXXXXXXXX
+username=XXXXXXXXXXXXXXXX
+password=XXXXXXXXXXXXXX
+
+```
+Of course, the Xs are replaced by your IDs.
+
+I just want to point out, that having a little bit of Karma on the used account is kinda neccessary, without it, you will only be able to post **ONCE** in 10 Minutes.
  
 
 ## Features
