@@ -67,8 +67,8 @@ try:
                         time.sleep(18)
                         comment_list = list(submission.comments)
                         kommentiere()
-except Exception as err:
-        print("An Error Occurred! You probably can't post due to low Karma or a mute/ban")
+except praw.exceptions.APIException as err:
+        print("An API-Error Occurred! You probably can't post due to low Karma or a mute/ban")
         print("Press ENTER to close the script")
         input()
 
