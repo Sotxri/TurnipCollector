@@ -1,6 +1,7 @@
 # TurnipCollector
 **_Hear ya, hear ya! Get your Turnips sold fast and easy!_**
 ![](images/Daisy.png)
+_Drawn by Kreamy Kae. Visit her on [her Tumblr](https://kreamykae.tumblr.com/)
 This bot is designed to scour through the acturnips subreddit to find any posts related to selling/buying.
 ## Requirements
 - [ ] A Reddit account
